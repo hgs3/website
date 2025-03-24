@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <title>My Blog</title>
+        <link>https://hgs3.me/</link>
+        <description>Latest posts from My Blog</description>
+        
+        <item>
+            <title>Confetti: The Configuration Language For Humans</title>
+            <link>https://hgs3.me//journal/confetti-the-configuration-language-for-humans</link>
+            <description><![CDATA[<p>Today, I’m announcing <strong>Confetti</strong> - a modern configuration language format intended for human editable configuration files.
+Checkout its <a href="https://confetti.hgs3.me/">official webpage</a> for examples.</p>
+<h2 id="why?">Why?<a href="#why?">#</a></h2>
+<p>Formats like XML and JSON are <strong>data-interchange formats</strong>.
+They are not great as configuration file formats as the signal to noise ratio is too high.
+A missing comma or missing colon can throw everything off.
+JSON, in particular, doesn’t even allow comments!</p>
+<p>The biggest downside of these formats is they aren’t localization friendly.
+Formats, like JSON, require the English words <code>null</code>, <code>true</code>, and <code>false</code>, and Western digits <code>0</code> through <code>9</code>.</p>
+<p>Confetti is different.
+Confetti lets you write configuration files in your native language.
+It’s typeless and doesn’t make assumptions.
+For example, you can decide whether <code>true</code>, <code>yes</code>, or <code>on</code> makes the most sense for your application.</p>
+<h2 id="minimalistic-design">Minimalistic Design<a href="#minimalistic-design">#</a></h2>
+<p>Confetti syntax is loosely inspired by Unix configuration files, the shell word splitting algorithm, and JSON.
+I wanted the format to remain <em>typeless</em> and support hierarchical structures.</p>
+<p>I designed Confetti to be extensible.
+Just like how John Grubber defined Common Markdown and others have created their own Markdown flavors, I encourage others to create their own Confetti flavors.</p>
+<h2 id="reference-implementation">Reference Implementation<a href="#reference-implementation">#</a></h2>
+<p>I’ve written an implementation of a Confetti parser in C and its source code is <a href="https://github.com/hgs3/confetti/">hosted on GitHub</a>.
+This implementation parses Confetti source <em>incrementally</em>.
+It does <strong>not</strong> build an in-memory tree-representation like most XML and JSON parsers.</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>I have zero expectations for Confetti.
+Existing formats, even with their faults, are entrenched in the software ecosystem.
+Nonetheless, I created Confetti because I believe it addresses real problems and I hope others will see that too.</p>]]></description>
+            <pubDate>Fri, 14 Mar 2025 00:00:00 </pubDate>
+        </item>
+        
+        <item>
+            <title>Railgun Labs: From Vision to Reality</title>
+            <link>https://hgs3.me//journal/railgun-labs-from-vision-to-reality</link>
+            <description><![CDATA[<p>Railgun Labs is an independent software company founded by myself in 2024.
+At the time of this writing, I’ve shipped <strong>five</strong> software products with more on the way.
+The company represents the culmination of several years of work and, given that this is my <em>personal</em> website, I wanted to share some of the history and philosophy behind the company.</p>
+<h2 id="products-first,-business-second">Products First, Business Second<a href="#products-first,-business-second">#</a></h2>
+<p>I’m a passion-driven software developer so I pick projects that I think are “interesting” rather than what will maximize profits.
+Put another way, I’m a product guy first and foremost.
+I love to build things.
+To me, money is a tool at best and an obstacle at worst.</p>
+<p>My business strategy is to create products that <em>I</em> think are interesting because if <em>I</em> have a use for them, then I believe <em>others</em> will too.
+I understand this approach might yield fewer sales, so I keep my expenditures low.
+I view it as an acceptable tradeoff as it allows me to feel more connected to my work.</p>
+<h2 id="naming-the-company">Naming the Company<a href="#naming-the-company">#</a></h2>
+<p>I named the company “Railgun” after my favorite gun from <a href="https://en.wikipedia.org/wiki/Quake_II">Quake II</a>.
+I grew up playing old-school first person shooters and the railgun always stood out as a unique weapon to me.</p>
+<p>I added “Labs” after my love of early Hollywood Mad Scientist tropes (see the original Dr. Frankenstein in the 1931 movie “Frankenstein”).</p>
+<figure>
+<img alt="Dr. Frankenstein’s Lab (1931)." height="431" loading="lazy" src="/assets/frankenstein-lab.png" width="560"/>
+<figcaption>Dr. Frankenstein’s Lab as seen in the film Frankenstein (1931).</figcaption>
+</figure>
+<p>As a name, I think “Railgun Labs” is fun!
+It conveys high velocity with experimentation which, I think, is perfect for a small scrappy tech startup.</p>
+<h2 id="designing-the-website">Designing the Website<a href="#designing-the-website">#</a></h2>
+<p>When designing the company website, I wanted to balance fun with professionalism.
+I opted for a minimalistic, flat art style to give that <em>professional</em> feel.
+I injected “fun” by choosing vibrant colors.</p>
+<h3 id="early-designs">Early Designs<a href="#early-designs">#</a></h3>
+<p>I was initially conflicted on how to create the balance I was looking for.
+My early designs, I think, went a touch too far:</p>
+<figure>
+<img alt="Early website design." height="549" loading="lazy" src="/assets/early-railgun-website.png" width="964"/>
+<figcaption>Early website design.</figcaption>
+</figure>
+<p>In this early design, I had mostly finalized the home page layout and logo design, but the colors scheme was completely different from the final version.
+In the final design, the colors are <em>vibrant</em> and <em>professional</em> and there’s a bit more humor injected.
+For example, the “goto” in “GOTO Products” is a reference to the <a href="https://en.wikipedia.org/wiki/Goto">goto statement</a>.</p>
+<figure>
+<img alt="Final company website design." height="988" loading="lazy" src="/assets/final-railgun-website.png" width="1403"/>
+<figcaption>Final company website design.</figcaption>
+</figure>
+<p>Websites are always an ongoing project.
+I anticipate that I will refresh the design from time-to-time.</p>
+<h3 id="designing-a-mascot">Designing a Mascot<a href="#designing-a-mascot">#</a></h3>
+<p>Not too many tech companies have a mascot.
+The choice to have one was motivated by my desire to create a strong brand identity as well as a sense of playfulness.</p>
+<p>The mascot was initially based on the appearance of Doctor Tomoe from the anime <em>Sailor Moon</em>.
+I wasn’t too big of an anime fan when I was younger.
+My viewing was limited to Pokémon and whatever aired on Toonami, but the design of Doctor Tomoe always stuck with me.</p>
+<figure>
+<img alt="Doctor Tomoe." height="333" loading="lazy" src="/assets/tomoe.jpg" width="394"/>
+<figcaption>Doctor Tomoe.</figcaption>
+</figure>
+<p>My initial design of the mascot was very reminiscent of Doctor Tomoe.
+I think the influence is fairly obvious, once pointed out.</p>
+<figure>
+<img alt="Early mascot design." height="441" loading="lazy" src="/assets/early-mascot-design.png" width="335"/>
+<figcaption>Early mascot design.</figcaption>
+</figure>
+<p>As I iterated on the design, I toned it down, along with the website, to present the more professional look I was after.
+As I approached the final design, I gave the mascot a name: <strong>Dr. Chip Codewell</strong>.
+He represents my commitment to innovation.</p>
+<figure>
+<img alt="Final mascot design." height="383" loading="lazy" src="/assets/final-mascot-design.png" width="260"/>
+<figcaption>Final mascot design.</figcaption>
+</figure>
+<p>Like the website, I expect Chip to continue to undergo refreshes from time-to-time.</p>
+<h2 id="product-pricing">Product Pricing<a href="#product-pricing">#</a></h2>
+<p>When it comes to pricing my products and services, I wish I could say there was some master strategy or scientific equation I used, but I mostly just reviewed what competitors in the same space were offering and based my prices on theirs.
+I also gauged how “expensive” it would be to replicate my work and set my prices lower to make my offerings more appealing.</p>
+<h2 id="marketing">Marketing<a href="#marketing">#</a></h2>
+<p>I’m not a big social media person, but for marketing I’m relying on it.
+I am tentatively planning to attend various, in-person venues in the future.
+And my direct outreach to various tech companies has begun.</p>
+<p>My <a href="https://news.ycombinator.com/item?id=42423988">post announcing Unicorn</a> reached the front page of Hacker News.
+I attribute the success to <em>when</em> I posted: I made the announcement early-mid December when, I think, a non-negligible amount of people were out on vacation for the Holidays and new content was slow thereby making it “easier” for me to get noticed.</p>
+<h2 id="an-ongoing-adventure">An Ongoing Adventure<a href="#an-ongoing-adventure">#</a></h2>
+<p>Railgun Labs is an ongoing venture for me.
+I’m not sure where it will lead, but I don’t regret the decision to quit my job to pursue it.
+I plan to continue posting meta updates here as well as other insights as I continue this journey.</p>]]></description>
+            <pubDate>Fri, 07 Mar 2025 00:00:00 </pubDate>
+        </item>
+        
+        <item>
+            <title>Hello, World!</title>
+            <link>https://hgs3.me//journal/hello-world</link>
+            <description><![CDATA[<p>Hello, everyone!
+I’m Henry and this is my personal website.
+I decided to create a personal website to collect my work, writing and thoughts in a common place.
+I <em>could</em> spend the remainder of this post introducing myself, but I think my <a href="/about">about page</a> does a good job of that.</p>
+<h2 id="goals-for-this-website">Goals for this Website<a href="#goals-for-this-website">#</a></h2>
+<p>My intentions are to write about my personal projects, thoughts on technology, and my other hobbies (movies, games, music, etc).
+I started my own independent software company not too long ago so I intend to share my experience as a budding technopreneur.</p>
+<h2 id="subscribe-for-updates">Subscribe for Updates<a href="#subscribe-for-updates">#</a></h2>
+<p>I’m not a fan of centralization, much less so when it comes to online communication.
+You won’t find me on X or Bluesky.
+If you’re interested in following my progress, you can subscribe with your RSS or Atom reader of choice.</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>I am not a chronically online person and I avoid traditional social media.
+I don’t consume news or much media outside of my interests.
+As a result, you might find my perspectives a bit outside the norm.
+Nonetheless, I hope you’ll find my writings, at the very least, amusing.</p>]]></description>
+            <pubDate>Sat, 01 Mar 2025 00:00:00 </pubDate>
+        </item>
+        
+    </channel>
+</rss>

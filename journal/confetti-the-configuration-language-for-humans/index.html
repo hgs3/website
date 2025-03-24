@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Henry’s Hangout" />
+<meta property="og:image" content="https://hgs3.me/assets/me-4x.png" />
+<meta property="og:image:width" content="780" />
+<meta property="og:image:height" content="700" />
+<meta property="og:image:type" content="image/png" />
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Confetti: The Configuration Language For Humans" />
+<meta property="og:url" content="https://hgs3.me/journal/confetti-the-configuration-language-for-humans" />
+<meta property="article:publisher" content="https://hgs3.me" />
+<meta property="article:published_time" content="2025-03-14T00:00:00" />
+<meta property="article:author" content="Henry" />
+
+<title>Confetti: The Configuration Language For Humans</title>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Henry’s Hangout" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Henry’s Hangout" href="/atom.xml">
+<link rel="apple-touch-icon" type="image/png" href="/assets/favicon-apple-touch.png">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" href="/assets/favicon.ico" sizes="32x32">
+</head>
+<body>
+  <header class="mobile-header">
+    <!-- Profile picture -->
+    <a href="/">
+      <picture class="profile-picture">
+        <source type="image/webp" srcset="/assets/mini-me.webp 1x, /assets/mini-me-2x.webp 2x, /assets/mini-me-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/webp" srcset="/assets/mini-me-dark.webp 1x, /assets/mini-me-dark-2x.webp 2x, /assets/mini-me-dark-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <source type="image/png" srcset="/assets/mini-me.png 1x, /assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/png" srcset="/assets/mini-me-dark.png 1x, /assets/mini-me-dark-2x.png 2x, /assets/mini-me-dark-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <img src="/assets/mini-me.png" srcset="/assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" alt="Me" />
+      </picture>
+    </a>
+    <h1 class="title">Journal</h1>
+    
+    
+    <!-- Hamburger icon -->
+    <input class="hamburger-menu" type="checkbox" id="hamburger"/>
+    <label class="hamburger-icon" for="hamburger"><span class="hamburger-icon-line"></span></label>
+    <!-- Mobile menu -->
+    <nav class="mobile-menu">
+      <section>
+        <h2>Website Navigation</h2>
+        <menu>
+          <li><a href="/">Journal</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/about/">About</a></li>
+        </menu>
+      </section>
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/confetti-the-configuration-language-for-humans">Confetti: The Configuration Language For Humans</a></dt>
+    <dd>March 14th, 2025</dd>
+  
+    <dt><a href="/journal/railgun-labs-from-vision-to-reality">Railgun Labs: From Vision to Reality</a></dt>
+    <dd>March 7th, 2025</dd>
+  
+    <dt><a href="/journal/hello-world">Hello, World!</a></dt>
+    <dd>March 1st, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+<div class="mobile-menu-gutter"></div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Large form factors only -->
+    <header class="desktop-header">
+      <!-- Social media links -->
+      <menu class="social-links">
+        <li><a href="https://github.com/hgs3/"><span class="icon-github"></span></a></li>
+        
+        <li><a href="https://old.reddit.com/user/hgs3/"><span class="icon-reddit"></span></a></li>
+        <li><a href="https://news.ycombinator.com/user?id=hgs3"><span class="icon-hackernews"></span></a></li>
+        <li><a href="/rss.xml"><span class="icon-rss"></span></a></li>
+        <li><a href="/atom.xml"><span class="icon-atom"></span></a></li>
+      </menu>
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Hi, I’m Henry. I make things.</h1>
+            <p>Keep up with me by subscribing with your RSS or Atom reader of choice.</p>
+          </div>
+          <nav>
+            <menu class="hero-navigation">
+              <li class="active"><a href="/">Journal</a></li>
+              <li ><a href="/projects/">Projects</a></li>
+              <li ><a href="/about/">About</a></li>
+            </menu>
+          </nav>
+        </div>
+        <picture class="hero-me">
+          <source type="image/webp" srcset="/assets/me.webp 1x, /assets/me-2x.webp 2x, /assets/me-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/webp" srcset="/assets/me-dark.webp 1x, /assets/me-dark-2x.webp 2x, /assets/me-dark-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <source type="image/png" srcset="/assets/me.png 1x, /assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/png" srcset="/assets/me-dark.png 1x, /assets/me-dark-2x.png 2x, /assets/me-dark-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/me.png" srcset="/assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" alt="Me" />
+        </picture>
+      </div>
+    </header>
+  </div>
+<div class="breadcrumbs">
+  <hr/>
+    <div class="container">
+      <ul>
+        <li><a href="/">Journal</a></li>
+        <li>Confetti: The Configuration Language For Humans</li>
+      </ul>
+    </div>
+  <hr/>
+</div>
+<div class="container layout">
+    <main class="layout-content">
+<article class="content">
+  <h1 class="post-title">Confetti: The Configuration Language For Humans</h1>
+  <p class="post-date">Posted on March 14th, 2025&nbsp;&nbsp;&nbsp;&nbsp;<a href="/category/programming">#programming</a></p>
+  <div><p>Today, I’m announcing <strong>Confetti</strong> - a modern configuration language format intended for human editable configuration files.
+Checkout its <a href="https://confetti.hgs3.me/">official webpage</a> for examples.</p>
+<h2 id="why?">Why?<a href="#why?">#</a></h2>
+<p>Formats like XML and JSON are <strong>data-interchange formats</strong>.
+They are not great as configuration file formats as the signal to noise ratio is too high.
+A missing comma or missing colon can throw everything off.
+JSON, in particular, doesn’t even allow comments!</p>
+<p>The biggest downside of these formats is they aren’t localization friendly.
+Formats, like JSON, require the English words <code>null</code>, <code>true</code>, and <code>false</code>, and Western digits <code>0</code> through <code>9</code>.</p>
+<p>Confetti is different.
+Confetti lets you write configuration files in your native language.
+It’s typeless and doesn’t make assumptions.
+For example, you can decide whether <code>true</code>, <code>yes</code>, or <code>on</code> makes the most sense for your application.</p>
+<h2 id="minimalistic-design">Minimalistic Design<a href="#minimalistic-design">#</a></h2>
+<p>Confetti syntax is loosely inspired by Unix configuration files, the shell word splitting algorithm, and JSON.
+I wanted the format to remain <em>typeless</em> and support hierarchical structures.</p>
+<p>I designed Confetti to be extensible.
+Just like how John Grubber defined Common Markdown and others have created their own Markdown flavors, I encourage others to create their own Confetti flavors.</p>
+<h2 id="reference-implementation">Reference Implementation<a href="#reference-implementation">#</a></h2>
+<p>I’ve written an implementation of a Confetti parser in C and its source code is <a href="https://github.com/hgs3/confetti/">hosted on GitHub</a>.
+This implementation parses Confetti source <em>incrementally</em>.
+It does <strong>not</strong> build an in-memory tree-representation like most XML and JSON parsers.</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>I have zero expectations for Confetti.
+Existing formats, even with their faults, are entrenched in the software ecosystem.
+Nonetheless, I created Confetti because I believe it addresses real problems and I hope others will see that too.</p></div>
+</article>
+</main>
+    <aside class="layout-sidebar">
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/confetti-the-configuration-language-for-humans">Confetti: The Configuration Language For Humans</a></dt>
+    <dd>March 14th, 2025</dd>
+  
+    <dt><a href="/journal/railgun-labs-from-vision-to-reality">Railgun Labs: From Vision to Reality</a></dt>
+    <dd>March 7th, 2025</dd>
+  
+    <dt><a href="/journal/hello-world">Hello, World!</a></dt>
+    <dd>March 1st, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+</aside>
+  </div>
+  <div class="container">
+    <div class="layout">
+      <main class="layout-content">
+<section class="journal-nav">
+  <div class="previous"><a href="/journal/railgun-labs-from-vision-to-reality"><span class="icon-previous"></span> <p>Railgun Labs: From Vision to Reality</p></a></div>
+  <div class="next"></div>
+</section>
+</main>
+      <aside class="layout-sidebar"></aside>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; 2025 Henry’s Hangout. All rights reserved. </p>
+    </footer>
+  </div>
+</body>
+</html>
