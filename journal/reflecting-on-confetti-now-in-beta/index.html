@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hi, I’m Henry. I make things. This is my personal website. Keep up with me by subscribing with your RSS or Atom reader of choice.">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Henry’s Hangout">
+<meta property="og:image" content="https://hgs3.me/assets/me-4x.png">
+<meta property="og:image:width" content="780">
+<meta property="og:image:height" content="700">
+<meta property="og:image:type" content="image/png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Reflecting on Confetti: Now In Beta">
+<meta property="og:url" content="https://hgs3.me/journal/reflecting-on-confetti-now-in-beta">
+<meta property="article:publisher" content="https://hgs3.me">
+<meta property="article:published_time" content="2025-04-14T00:00:00">
+<meta property="article:author" content="Henry">
+
+<title>Reflecting on Confetti: Now In Beta | Henry’s Journal</title>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Henry’s Hangout" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Henry’s Hangout" href="/atom.xml">
+<link rel="apple-touch-icon" type="image/png" href="/assets/favicon-apple-touch.png">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" href="/assets/favicon.ico" sizes="32x32">
+</head>
+<body>
+  <header class="mobile-header">
+    <!-- Profile picture -->
+    <a href="/">
+      <picture class="profile-picture">
+        <source type="image/webp" srcset="/assets/mini-me.webp 1x, /assets/mini-me-2x.webp 2x, /assets/mini-me-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/webp" srcset="/assets/mini-me-dark.webp 1x, /assets/mini-me-dark-2x.webp 2x, /assets/mini-me-dark-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <source type="image/png" srcset="/assets/mini-me.png 1x, /assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/png" srcset="/assets/mini-me-dark.png 1x, /assets/mini-me-dark-2x.png 2x, /assets/mini-me-dark-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <img src="/assets/mini-me.png" srcset="/assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" alt="Me" />
+      </picture>
+    </a>
+    <h1 class="title">Journal</h1>
+    
+    
+    <!-- Hamburger icon -->
+    <input class="hamburger-menu" type="checkbox" id="hamburger"/>
+    <label class="hamburger-icon" for="hamburger"><span class="hamburger-icon-line"></span></label>
+    <!-- Mobile menu -->
+    <nav class="mobile-menu">
+      <section>
+        <h2>Website Navigation</h2>
+        <menu>
+          <li><a href="/">Journal</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/about/">About</a></li>
+        </menu>
+      </section>
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/reflecting-on-confetti-now-in-beta">Reflecting on Confetti: Now In Beta</a></dt>
+    <dd>April 14th, 2025</dd>
+  
+    <dt><a href="/journal/confetti-the-configuration-language-for-humans">Confetti: The Configuration Language For Humans</a></dt>
+    <dd>March 14th, 2025</dd>
+  
+    <dt><a href="/journal/railgun-labs-from-vision-to-reality">Railgun Labs: From Vision to Reality</a></dt>
+    <dd>March 7th, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+<div class="mobile-menu-gutter"></div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Large form factors only -->
+    <header class="desktop-header">
+      <!-- Social media links -->
+      <menu class="social-links">
+        <li><a href="https://github.com/hgs3/"><span class="icon-github"></span></a></li>
+        
+        <li><a href="https://old.reddit.com/user/hgs3/"><span class="icon-reddit"></span></a></li>
+        <li><a href="https://news.ycombinator.com/user?id=hgs3"><span class="icon-hackernews"></span></a></li>
+        <li><a href="/rss.xml"><span class="icon-rss"></span></a></li>
+        <li><a href="/atom.xml"><span class="icon-atom"></span></a></li>
+      </menu>
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Hi, I’m Henry. I make things.</h1>
+            <p>Keep up with me by subscribing with your RSS or Atom reader of choice.</p>
+          </div>
+          <nav>
+            <menu class="hero-navigation">
+              <li class="active"><a href="/">Journal</a></li>
+              <li ><a href="/projects/">Projects</a></li>
+              <li ><a href="/about/">About</a></li>
+            </menu>
+          </nav>
+        </div>
+        <picture class="hero-me">
+          <source type="image/webp" srcset="/assets/me.webp 1x, /assets/me-2x.webp 2x, /assets/me-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/webp" srcset="/assets/me-dark.webp 1x, /assets/me-dark-2x.webp 2x, /assets/me-dark-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <source type="image/png" srcset="/assets/me.png 1x, /assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/png" srcset="/assets/me-dark.png 1x, /assets/me-dark-2x.png 2x, /assets/me-dark-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/me.png" srcset="/assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" alt="Me" />
+        </picture>
+      </div>
+    </header>
+  </div>
+<div class="breadcrumbs">
+  <hr/>
+    <div class="container">
+      <ul>
+        <li><a href="/">Journal</a></li>
+        <li>Reflecting on Confetti: Now In Beta</li>
+      </ul>
+    </div>
+  <hr/>
+</div>
+<div class="container layout">
+    <main class="layout-content">
+<article class="content">
+  <h1 class="post-title">Reflecting on Confetti: Now In Beta</h1>
+  <p class="post-date">Posted on April 14th, 2025&nbsp;&nbsp;&nbsp;&nbsp;<a href="/category/programming">#programming</a></p>
+  <div><p>Four weeks ago, I announced <a href="https://confetti.hgs3.me/">Confetti</a> on this blog.
+Two weeks ago, I shared the project on Reddit and Hacker News to gather feedback.
+Today, with the release of <strong>Confetti 1.0 beta</strong>, I’d like to reflect on what I’ve learned, the feedback I received, and where the project goes from here.</p>
+<h2 id="initial-reception">Initial Reception<a href="#initial-reception">#</a></h2>
+<p>The initial feedback on Reddit was largely positive.
+Responses came in quickly and continued for several days.</p>
+<p>Hacker News, however, was silent: no comments, no votes, nothing.
+I figured maybe I posted at an off time or there just wasn’t interest.
+But — a few days later — I woke up to find my post on the <strong>front page</strong>!</p>
+<p>It turns out Hacker News has a <a href="https://news.ycombinator.com/item?id=26998309">second-chance pool</a> where moderators can manually boost promising projects that did not receive enough initial attention.
+I have no insight into this process or who the moderator was who surfaced Confetti, but if you’re reading this: thank you.</p>
+<p>Since sharing the project on social media, <a href="https://github.com/hgs3/confetti/">Confetti’s GitHub repository</a> has seen a surprising amount of traffic, suggesting ongoing interest.</p>
+<h2 id="comparisons-with-json">Comparisons with JSON<a href="#comparisons-with-json">#</a></h2>
+<p>Several users compared Confetti to JSON.
+The comparison mainly revolved around typing: JSON has it, Confetti doesn’t.</p>
+<p>JSON offers five built-in types: booleans, numbers, strings, arrays, and objects — plus the special value null.
+Confetti, by contrast, is typeless: it operates using strings and directives.</p>
+<h3 id="types-vs-typeless">Types vs Typeless<a href="#types-vs-typeless">#</a></h3>
+<p>I find the comparison with JSON interesting because, in practice, JSON’s typing doesn’t do as much as often implied:</p>
+<p>Firstly, JSON lacks a schema language.
+Schema validation is the responsibility of the user application.
+Whether you expect an array, object, or a particular element type, you still have to validate it manually — just as you would with Confetti.</p>
+<p>Secondly, when validating strings, you sometimes need to go further.
+For example, checking if a string is a valid ISO 8601 or RFC 3339 timestamp requires manual validation — just as it would with Confetti.</p>
+<p>Lastly, when dealing with numbers, checking if a value is a number in Confetti is as easy as comparing it against a simple regular expression.
+And for booleans and null, these are just strings — “true”, “false”, and “null” — and can be verified with a simple string comparison.</p>
+<p>So, in my view, JSON’s minimal typing doesn’t add much in real-world use cases.
+If you <em>are</em> looking for real, schema-enforced types, then you might consider languages like <a href="https://pkl-lang.org/">Pkl</a> that support user-defined types and structural validation.</p>
+<h2 id="feature-suggestions">Feature Suggestions<a href="#feature-suggestions">#</a></h2>
+<p>Alongside the initial feedback, I received some thoughtful feature suggestions.
+Here are a few that stood out:</p>
+<h3 id="bracket-syntax">Bracket Syntax<a href="#bracket-syntax">#</a></h3>
+<p>One suggestion was to use brackets to denote multi-line directives.</p>
+<p>Right now, you’d use a trailing backslash:</p>
+<div class="codehilite"><pre><span></span><code>foo bar \
+  baz qux
+</code></pre></div>
+<p>The proposed alternative uses brackets:</p>
+<div class="codehilite"><pre><span></span><code>foo [bar
+  baz qux]
+</code></pre></div>
+<p>I found this suggestion interesting because the syntax resembles an array (minus the commas) as written in various programming languages.
+It might even feel more intuitive for long directives that represent list-like concepts.
+However, as interesting as the suggestion is, subdirectives can also be used to represent list-likes:</p>
+<div class="codehilite"><pre><span></span><code>foo { bar
+  baz qux }
+</code></pre></div>
+<p>Here, an application would treat the subdirectives and their arguments as entries in the “list”.
+So, while the “array”-like syntax is interesting, I don’t feel the need to implement it.</p>
+<h3 id="execution-model">Execution Model<a href="#execution-model">#</a></h3>
+<p>Another suggestion was to give Confetti an execution model — essentially turning it into a programming language.
+While intriguing, this is beyond the scope of what I intended for the language.</p>
+<p>Confetti is, and will remain, a configuration language.
+Its syntax is flexible enough to support domain-specific languages (as shown on the <a href="https://confetti.hgs3.me/examples/#_domain_specific_languages">examples page</a>), but embedding an execution model would go beyond its design goals.</p>
+<h2 id="discovering-prior-art">Discovering Prior Art<a href="#discovering-prior-art">#</a></h2>
+<p>On the <a href="https://confetti.hgs3.me/">Confetti homepage</a>, I compared Confetti to well-known configuration and data-interchange formats like XML, JSON, INI, and TOML.
+After launching, several users pointed out other configuration languages that resemble Confetti syntax.
+I’ll briefly discuss them:</p>
+<h3 id="sdlang">SDLang<a href="#sdlang">#</a></h3>
+<p><a href="https://sdlang.org/">Simple Declarative Language</a>, or SDLang, has some syntactic overlap with Confetti, but goes further than Confetti by adding types for strings, numbers, boolean and null, data/time formats, and binary data.
+While they might share some syntactic similarity, SDLang is clearly closer to JSON or TOML than it is to Confetti.</p>
+<h3 id="kdl">KDL<a href="#kdl">#</a></h3>
+<p><a href="https://kdl.dev/">KDL</a> also has a surface-level similarity with Confetti, but again, it supports types and even allows type annotations.
+It, too, is closer to JSON or TOML.</p>
+<h3 id="tcl">Tcl<a href="#tcl">#</a></h3>
+<p><a href="https://www.tcl-lang.org/">Tcl</a> is a dynamic programming language with a syntax that vaguely resembles Confetti.
+However, it’s a full-fledged language with dynamic typing and an execution model.
+If you like Confetti but need built-in types and evaluation, Tcl — or Lua — might be worth exploring.</p>
+<h2 id="tentative-plans">Tentative Plans<a href="#tentative-plans">#</a></h2>
+<p>As of this writing, Confetti is “done.”
+Both the C implementation and the specification are in <strong>1.0 beta</strong> status.</p>
+<p>My plan is to let the language “bake” in real-world usage for a while.
+Depending on how things go, I might increment the version to <strong>1.0 release candidate</strong> in the coming weeks or months, and eventually tag a stable <strong>1.0</strong>.</p>
+<h3 id="language-ports">Language Ports<a href="#language-ports">#</a></h3>
+<p>The current, canonical implementation of Confetti is implemented in C11.
+I originally intended to write a Python and Go port of Confetti, but I don’t personally have a need for them right now.
+Authoring them would be mostly for the benefit of others.</p>
+<p>With that said, <a href="https://confetti.hgs3.me/specification/">the specification</a> is complete and simple enough that anyone could write a port fairly easily.
+If you do, I’d love to hear about it!</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>The positive reception to Confetti has exceeded what I imagined.
+I’ll continue to support Confetti for the foreseeable future.
+If you find bugs in the specification or implementation, please report them on the project’s <a href="https://github.com/hgs3/confetti/issues">issue tracker</a>.</p></div>
+</article>
+</main>
+    <aside class="layout-sidebar">
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/reflecting-on-confetti-now-in-beta">Reflecting on Confetti: Now In Beta</a></dt>
+    <dd>April 14th, 2025</dd>
+  
+    <dt><a href="/journal/confetti-the-configuration-language-for-humans">Confetti: The Configuration Language For Humans</a></dt>
+    <dd>March 14th, 2025</dd>
+  
+    <dt><a href="/journal/railgun-labs-from-vision-to-reality">Railgun Labs: From Vision to Reality</a></dt>
+    <dd>March 7th, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+</aside>
+  </div>
+  <div class="container">
+    <div class="layout">
+      <main class="layout-content">
+<section class="journal-nav">
+  <div class="previous"><a href="/journal/confetti-the-configuration-language-for-humans"><span class="icon-previous"></span> <p>Confetti: The Configuration Language For Humans</p></a></div>
+  <div class="next"></div>
+</section>
+</main>
+      <aside class="layout-sidebar"></aside>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; 2025 Henry’s Hangout. All rights reserved. </p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -4,8 +4,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://hgs3.me/</loc>
-        <lastmod>2025-03-14</lastmod>
+        <lastmod>2025-04-14</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/reflecting-on-confetti-now-in-beta</loc>
+        <lastmod>2025-04-14</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://hgs3.me/journal/confetti-the-configuration-language-for-humans</loc>
@@ -24,7 +29,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/category/programming</loc>
-        <lastmod>2025-03-14</lastmod>
+        <lastmod>2025-04-14</lastmod>
         <priority>0.3</priority>
     </url>
     <url>
@@ -39,7 +44,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/archive/2025</loc>
-        <lastmod>2025-03-14</lastmod>
+        <lastmod>2025-04-14</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
