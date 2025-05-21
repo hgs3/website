@@ -4,8 +4,18 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://hgs3.me/</loc>
-        <lastmod>2025-04-14</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/drawing-my-five-month-progression</loc>
+        <lastmod>2025-05-15</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/root-beer-an-ode-to-my-favorite-soda</loc>
+        <lastmod>2025-05-01</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://hgs3.me/journal/reflecting-on-confetti-now-in-beta</loc>
@@ -28,6 +38,16 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://hgs3.me/category/art</loc>
+        <lastmod>2025-05-15</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/category/root-beer</loc>
+        <lastmod>2025-05-01</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://hgs3.me/category/programming</loc>
         <lastmod>2025-04-14</lastmod>
         <priority>0.3</priority>
@@ -44,7 +64,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/archive/2025</loc>
-        <lastmod>2025-04-14</lastmod>
+        <lastmod>2025-05-15</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
@@ -54,7 +74,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/about</loc>
-        <lastmod>2025-03-25</lastmod>
+        <lastmod>2025-05-18</lastmod>
         <priority>0.6</priority>
     </url>
 </urlset>
