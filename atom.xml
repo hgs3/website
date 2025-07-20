@@ -4,6 +4,87 @@
     <link>https://hgs3.me/</link>
     
         <entry>
+            <title>Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?</title>
+            <link>https://hgs3.me//journal/unmasking-the-ecs-design-pattern</link>
+            <updated>Sun, 20 Jul 2025 00:00:00 </updated>
+            <content type="html"><![CDATA[<p>The <strong>Entity Component System</strong> (ECS) design pattern is popular with game developers.
+It’s celebrated as a modern data-oriented paradigm, standing in stark contrast to traditional Object-Oriented Programming (OOP).
+But what if ECS isn’t an entirely novel invention?
+What if it’s actually a clever re-packaging of long-standing programming concepts, driven by the unique needs of game development?</p>
+<h2 id="the-ecs-design-pattern">The ECS Design Pattern<a href="#the-ecs-design-pattern">#</a></h2>
+<p>Let’s begin with a quick refresher on what ECS is, conceptually:</p>
+<dl>
+<dt>Entity</dt>
+<dd>It represents a “thing” in a game (e.g. a player, a tree, a bullet). Think of it as an empty container.</dd>
+<dt>Component</dt>
+<dd>This is pure data. It describes a specific attribute of an entity (e.g. <code>Position{ x, y, z }</code> or <code>Health{ value }</code>). An entity gains capabilities by having components attached to it.</dd>
+<dt>System</dt>
+<dd>This is pure logic. It processes entities with a specific set of components and performs operations on that component data. For example, a “movement system” might process all entities that have both a <code>Position</code> and a <code>Velocity</code> component.</dd>
+</dl>
+<h2 id="design-patterns-as-missing-language-features">Design Patterns as Missing Language Features<a href="#design-patterns-as-missing-language-features">#</a></h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design pattern</a> is a general, reusable solution to a common problem that occurs within a given context in software design.
+There have been many books published about design patterns, one of the most famous being the “Gang of Four” book.</p>
+<p>One of the criticisms of design patterns is that many of them appear to be workarounds for missing language features.
+Peter Norvig demonstrated that 16 of the 23 classic design patterns in the “Gang of Four” book are either simplified or eliminated by more powerful language constructs.
+This is further reinforced by various academic papers like <em>"On the Interaction of Object‑Oriented Design Patterns and Programming Languages"</em> by Gerald Baumgartner, Konstantin Läufer, and Vincent F. Russo.</p>
+<p>This makes me wonder: What underlying language features is the ECS design pattern effectively a workaround or implementation of?</p>
+<h3 id="mixins">Mixins<a href="#mixins">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Mixin">Mixins</a> are an object-oriented concept that allows a programmer to inject some code into a class.
+Instead of reusing code through inheritance, you “mix in” the code into the class instead.</p>
+<p>Mixins were introduced by the <em>Flavors</em> programming language, an early object-oriented extension to Lisp.
+Its creator, Howard Cannon, was inspired by a local Ice Cream Parlor shop which offered basic flavors of ice cream (vanilla, chocolate, etc.) and blended them into a combination of extra items (nuts, chocolate chips, fudge, etc.).
+These extra items were called “mix-ins".</p>
+<p>Bringing this back to ECS: The <strong>Entity</strong> is the ice cream and the <strong>Component</strong> is the “mix-in".
+The idea is you take your ice cream (the entity) and mix-in the nuts and chocolate chips (the components).
+More technically, you might take a <code>Player</code> entity and mix-in the <code>Position</code> and <code>Velocity</code> components.</p>
+<h3 id="reflection">Reflection<a href="#reflection">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Reflective_programming">Reflection</a> is the ability for a programming language to examine and modify its own structure and behavior at runtime.
+In object-oriented programming languages, reflection might allow the inspection and modification of classes, interfaces, fields, and methods.</p>
+<p>In languages with mixins, reflection could allow the addition or removal of mixins from objects at runtime.
+Reflection could also be used to check which mixins an object has before passing them off to a function that operates on them.</p>
+<h2 id="connecting-the-features">Connecting the Features<a href="#connecting-the-features">#</a></h2>
+<p>Suppose we have a multi-paradigm programming language that has objects, free functions, and supports both mixins and reflection.
+In such a hypothetical language, we could reproduce the ECS pattern using native features:</p>
+<dl>
+<dt>Entity</dt>
+<dd>This is an “empty” object (e.g. a <code>Player</code> object).</dd>
+<dt>Component</dt>
+<dd>This is an object with state (your “mix-ins,” like a <code>Position</code> or <code>Health</code> object).</dd>
+<dt>System</dt>
+<dd>This is a free-function that uses reflection to check if the entity has the required mixins (components) and then operates on them.</dd>
+</dl>
+<p>To reproduce ECS:</p>
+<ol>
+<li>Instantiate an empty object (the <strong>Entity</strong>).</li>
+<li>Instantiate the stateful objects (the <strong>Components</strong>).</li>
+<li>Use reflection to mix-in the components into the entity object.</li>
+<li>Pass the entity object to free functions that can operate on objects possessing the mixins (the <strong>System</strong>).</li>
+</ol>
+<p>This is, in effect, ECS but represented entirely by native language features.</p>
+<h3 id="mixins-aren’t-strictly-required">Mixins Aren’t Strictly Required<a href="#mixins-aren’t-strictly-required">#</a></h3>
+<p>It’s important to clarify that mixins are not strictly required to achieve this.
+You might prefer <em>not</em> to use mixins if, depending on the programming language, their members occupy the same namespace as the entity object and risk naming conflicts with other component members or existing object fields.
+In this case, you could rely solely on reflection:</p>
+<p>To reproduce ECS without mixins:</p>
+<ol>
+<li>Instantiate an empty object (the <strong>Entity</strong>).</li>
+<li>Instantiate the stateful objects (the <strong>Components</strong>).</li>
+<li>Use reflection to inject the components as <em>distinct fields</em> onto the entity object.</li>
+<li>Pass the entity object to free functions that can operate on objects possessing the fields (the <strong>System</strong>).</li>
+</ol>
+<h2 id="the-“rediscovery”-by-game-developers">The “Rediscovery” by Game Developers<a href="#the-“rediscovery”-by-game-developers">#</a></h2>
+<p>If mixins and reflection have existed for decades, why is ECS often presented as an innovation, popularized by game developers?</p>
+<p>In my opinion, the answer lies in the constraints of statically typed languages, which dominate the game industry.
+While incredibly powerful for performance, languages like C++ inherently lack the built-in runtime dynamism, flexible reflection, and mixin capabilities found in languages like Ruby or Lua.</p>
+<p>Thus, ECS emerged as a pragmatic and highly effective design pattern to mimic these dynamic, compositional capabilities within a more rigid, compiled environment.
+It’s an architectural solution that allows C++ programmers to achieve the same kind of runtime flexibility that is often a native feature in other languages, while simultaneously offering superior control over data layout for performance.</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>I often observe “ECS frameworks” being introduced for programming languages that already possess the inherent dynamism and reflective capabilities that ECS simulates.
+Hopefully, this exploration of ECS offers a new perspective.
+It’s a testament to clever design and engineering that a pattern can effectively bring the benefits of one paradigm into the ecosystem of another, proving that sometimes, the “new” is simply a brilliant re-invention of the familiar.</p>]]></content>
+        </entry>
+    
+        <entry>
             <title>Drawing: My Five-Month Progression</title>
             <link>https://hgs3.me//journal/drawing-my-five-month-progression</link>
             <updated>Thu, 15 May 2025 00:00:00 </updated>

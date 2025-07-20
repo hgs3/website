@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Hi, I’m Henry. I make things. This is my personal website. Keep up with me by subscribing with your RSS or Atom reader of choice.">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Henry’s Hangout">
+<meta property="og:image" content="https://hgs3.me/assets/me-4x.png">
+<meta property="og:image:width" content="780">
+<meta property="og:image:height" content="700">
+<meta property="og:image:type" content="image/png">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?">
+<meta property="og:url" content="https://hgs3.me/journal/unmasking-the-ecs-design-pattern">
+<meta property="article:publisher" content="https://hgs3.me">
+<meta property="article:published_time" content="2025-07-20T00:00:00">
+<meta property="article:author" content="Henry">
+
+<title>Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts? | Henry’s Journal</title>
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
+<link rel="alternate" type="application/rss+xml" title="Henry’s Hangout" href="/rss.xml">
+<link rel="alternate" type="application/atom+xml" title="Henry’s Hangout" href="/atom.xml">
+<link rel="apple-touch-icon" type="image/png" href="/assets/favicon-apple-touch.png">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" href="/assets/favicon.ico" sizes="32x32">
+</head>
+<body>
+  <header class="mobile-header">
+    <!-- Profile picture -->
+    <a href="/">
+      <picture class="profile-picture">
+        <source type="image/webp" srcset="/assets/mini-me.webp 1x, /assets/mini-me-2x.webp 2x, /assets/mini-me-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/webp" srcset="/assets/mini-me-dark.webp 1x, /assets/mini-me-dark-2x.webp 2x, /assets/mini-me-dark-4x.webp 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <source type="image/png" srcset="/assets/mini-me.png 1x, /assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: light)" />
+        <source type="image/png" srcset="/assets/mini-me-dark.png 1x, /assets/mini-me-dark-2x.png 2x, /assets/mini-me-dark-4x.png 4x" width="48" height="48" media="(prefers-color-scheme: dark)" />
+        <img src="/assets/mini-me.png" srcset="/assets/mini-me-2x.png 2x, /assets/mini-me-4x.png 4x" width="48" height="48" alt="Me" />
+      </picture>
+    </a>
+    <h1 class="title">Journal</h1>
+    
+    
+    <!-- Hamburger icon -->
+    <input class="hamburger-menu" type="checkbox" id="hamburger"/>
+    <label class="hamburger-icon" for="hamburger"><span class="hamburger-icon-line"></span></label>
+    <!-- Mobile menu -->
+    <nav class="mobile-menu">
+      <section>
+        <h2>Website Navigation</h2>
+        <menu>
+          <li><a href="/">Journal</a></li>
+          <li><a href="/projects/">Projects</a></li>
+          <li><a href="/about/">About</a></li>
+        </menu>
+      </section>
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/unmasking-the-ecs-design-pattern">Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?</a></dt>
+    <dd>July 20th, 2025</dd>
+  
+    <dt><a href="/journal/drawing-my-five-month-progression">Drawing: My Five-Month Progression</a></dt>
+    <dd>May 15th, 2025</dd>
+  
+    <dt><a href="/journal/root-beer-an-ode-to-my-favorite-soda">Root Beer: An Ode to my Favorite Soda</a></dt>
+    <dd>May 1st, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/art">#art</a></li>
+  
+    <li><a href="/category/root-beer">#root-beer</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+<div class="mobile-menu-gutter"></div>
+    </nav>
+  </header>
+  <div class="container">
+    <!-- Large form factors only -->
+    <header class="desktop-header">
+      <!-- Social media links -->
+      <menu class="social-links">
+        <li><a href="https://github.com/hgs3/"><span class="icon-github"></span></a></li>
+        
+        <li><a href="https://old.reddit.com/user/hgs3/"><span class="icon-reddit"></span></a></li>
+        <li><a href="https://news.ycombinator.com/user?id=hgs3"><span class="icon-hackernews"></span></a></li>
+        <li><a href="/rss.xml"><span class="icon-rss"></span></a></li>
+        <li><a href="/atom.xml"><span class="icon-atom"></span></a></li>
+      </menu>
+      <!-- Hero section -->
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Hi, I’m Henry. I make things.</h1>
+            <p>Keep up with me by subscribing with your RSS or Atom reader of choice.</p>
+          </div>
+          <nav>
+            <menu class="hero-navigation">
+              <li class="active"><a href="/">Journal</a></li>
+              <li ><a href="/projects/">Projects</a></li>
+              <li ><a href="/about/">About</a></li>
+            </menu>
+          </nav>
+        </div>
+        <picture class="hero-me">
+          <source type="image/webp" srcset="/assets/me.webp 1x, /assets/me-2x.webp 2x, /assets/me-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/webp" srcset="/assets/me-dark.webp 1x, /assets/me-dark-2x.webp 2x, /assets/me-dark-4x.webp 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <source type="image/png" srcset="/assets/me.png 1x, /assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: light)" />
+          <source type="image/png" srcset="/assets/me-dark.png 1x, /assets/me-dark-2x.png 2x, /assets/me-dark-4x.png 4x" width="195" height="175" media="(prefers-color-scheme: dark)" />
+          <img src="/assets/me.png" srcset="/assets/me-2x.png 2x, /assets/me-4x.png 4x" width="195" height="175" alt="Me" />
+        </picture>
+      </div>
+    </header>
+  </div>
+<div class="breadcrumbs">
+  <hr/>
+    <div class="container">
+      <ul>
+        <li><a href="/">Journal</a></li>
+        <li>Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?</li>
+      </ul>
+    </div>
+  <hr/>
+</div>
+<div class="container layout">
+    <main class="layout-content">
+<article class="content">
+  <h1 class="post-title">Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?</h1>
+  <p class="post-date">Posted on July 20th, 2025&nbsp;&nbsp;&nbsp;&nbsp;<a href="/category/programming">#programming</a></p>
+  <div><p>The <strong>Entity Component System</strong> (ECS) design pattern is popular with game developers.
+It’s celebrated as a modern data-oriented paradigm, standing in stark contrast to traditional Object-Oriented Programming (OOP).
+But what if ECS isn’t an entirely novel invention?
+What if it’s actually a clever re-packaging of long-standing programming concepts, driven by the unique needs of game development?</p>
+<h2 id="the-ecs-design-pattern">The ECS Design Pattern<a href="#the-ecs-design-pattern">#</a></h2>
+<p>Let’s begin with a quick refresher on what ECS is, conceptually:</p>
+<dl>
+<dt>Entity</dt>
+<dd>It represents a “thing” in a game (e.g. a player, a tree, a bullet). Think of it as an empty container.</dd>
+<dt>Component</dt>
+<dd>This is pure data. It describes a specific attribute of an entity (e.g. <code>Position{ x, y, z }</code> or <code>Health{ value }</code>). An entity gains capabilities by having components attached to it.</dd>
+<dt>System</dt>
+<dd>This is pure logic. It processes entities with a specific set of components and performs operations on that component data. For example, a “movement system” might process all entities that have both a <code>Position</code> and a <code>Velocity</code> component.</dd>
+</dl>
+<h2 id="design-patterns-as-missing-language-features">Design Patterns as Missing Language Features<a href="#design-patterns-as-missing-language-features">#</a></h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Software_design_pattern">design pattern</a> is a general, reusable solution to a common problem that occurs within a given context in software design.
+There have been many books published about design patterns, one of the most famous being the “Gang of Four” book.</p>
+<p>One of the criticisms of design patterns is that many of them appear to be workarounds for missing language features.
+Peter Norvig demonstrated that 16 of the 23 classic design patterns in the “Gang of Four” book are either simplified or eliminated by more powerful language constructs.
+This is further reinforced by various academic papers like <em>"On the Interaction of Object‑Oriented Design Patterns and Programming Languages"</em> by Gerald Baumgartner, Konstantin Läufer, and Vincent F. Russo.</p>
+<p>This makes me wonder: What underlying language features is the ECS design pattern effectively a workaround or implementation of?</p>
+<h3 id="mixins">Mixins<a href="#mixins">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Mixin">Mixins</a> are an object-oriented concept that allows a programmer to inject some code into a class.
+Instead of reusing code through inheritance, you “mix in” the code into the class instead.</p>
+<p>Mixins were introduced by the <em>Flavors</em> programming language, an early object-oriented extension to Lisp.
+Its creator, Howard Cannon, was inspired by a local Ice Cream Parlor shop which offered basic flavors of ice cream (vanilla, chocolate, etc.) and blended them into a combination of extra items (nuts, chocolate chips, fudge, etc.).
+These extra items were called “mix-ins".</p>
+<p>Bringing this back to ECS: The <strong>Entity</strong> is the ice cream and the <strong>Component</strong> is the “mix-in".
+The idea is you take your ice cream (the entity) and mix-in the nuts and chocolate chips (the components).
+More technically, you might take a <code>Player</code> entity and mix-in the <code>Position</code> and <code>Velocity</code> components.</p>
+<h3 id="reflection">Reflection<a href="#reflection">#</a></h3>
+<p><a href="https://en.wikipedia.org/wiki/Reflective_programming">Reflection</a> is the ability for a programming language to examine and modify its own structure and behavior at runtime.
+In object-oriented programming languages, reflection might allow the inspection and modification of classes, interfaces, fields, and methods.</p>
+<p>In languages with mixins, reflection could allow the addition or removal of mixins from objects at runtime.
+Reflection could also be used to check which mixins an object has before passing them off to a function that operates on them.</p>
+<h2 id="connecting-the-features">Connecting the Features<a href="#connecting-the-features">#</a></h2>
+<p>Suppose we have a multi-paradigm programming language that has objects, free functions, and supports both mixins and reflection.
+In such a hypothetical language, we could reproduce the ECS pattern using native features:</p>
+<dl>
+<dt>Entity</dt>
+<dd>This is an “empty” object (e.g. a <code>Player</code> object).</dd>
+<dt>Component</dt>
+<dd>This is an object with state (your “mix-ins,” like a <code>Position</code> or <code>Health</code> object).</dd>
+<dt>System</dt>
+<dd>This is a free-function that uses reflection to check if the entity has the required mixins (components) and then operates on them.</dd>
+</dl>
+<p>To reproduce ECS:</p>
+<ol>
+<li>Instantiate an empty object (the <strong>Entity</strong>).</li>
+<li>Instantiate the stateful objects (the <strong>Components</strong>).</li>
+<li>Use reflection to mix-in the components into the entity object.</li>
+<li>Pass the entity object to free functions that can operate on objects possessing the mixins (the <strong>System</strong>).</li>
+</ol>
+<p>This is, in effect, ECS but represented entirely by native language features.</p>
+<h3 id="mixins-aren’t-strictly-required">Mixins Aren’t Strictly Required<a href="#mixins-aren’t-strictly-required">#</a></h3>
+<p>It’s important to clarify that mixins are not strictly required to achieve this.
+You might prefer <em>not</em> to use mixins if, depending on the programming language, their members occupy the same namespace as the entity object and risk naming conflicts with other component members or existing object fields.
+In this case, you could rely solely on reflection:</p>
+<p>To reproduce ECS without mixins:</p>
+<ol>
+<li>Instantiate an empty object (the <strong>Entity</strong>).</li>
+<li>Instantiate the stateful objects (the <strong>Components</strong>).</li>
+<li>Use reflection to inject the components as <em>distinct fields</em> onto the entity object.</li>
+<li>Pass the entity object to free functions that can operate on objects possessing the fields (the <strong>System</strong>).</li>
+</ol>
+<h2 id="the-“rediscovery”-by-game-developers">The “Rediscovery” by Game Developers<a href="#the-“rediscovery”-by-game-developers">#</a></h2>
+<p>If mixins and reflection have existed for decades, why is ECS often presented as an innovation, popularized by game developers?</p>
+<p>In my opinion, the answer lies in the constraints of statically typed languages, which dominate the game industry.
+While incredibly powerful for performance, languages like C++ inherently lack the built-in runtime dynamism, flexible reflection, and mixin capabilities found in languages like Ruby or Lua.</p>
+<p>Thus, ECS emerged as a pragmatic and highly effective design pattern to mimic these dynamic, compositional capabilities within a more rigid, compiled environment.
+It’s an architectural solution that allows C++ programmers to achieve the same kind of runtime flexibility that is often a native feature in other languages, while simultaneously offering superior control over data layout for performance.</p>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>I often observe “ECS frameworks” being introduced for programming languages that already possess the inherent dynamism and reflective capabilities that ECS simulates.
+Hopefully, this exploration of ECS offers a new perspective.
+It’s a testament to clever design and engineering that a pattern can effectively bring the benefits of one paradigm into the ecosystem of another, proving that sometimes, the “new” is simply a brilliant re-invention of the familiar.</p></div>
+</article>
+</main>
+    <aside class="layout-sidebar">
+<section>
+  <h2>Recent Posts</h2>
+  <dl>
+  
+    <dt><a href="/journal/unmasking-the-ecs-design-pattern">Unmasking the ECS Design Pattern: A Re-invention of Existing Concepts?</a></dt>
+    <dd>July 20th, 2025</dd>
+  
+    <dt><a href="/journal/drawing-my-five-month-progression">Drawing: My Five-Month Progression</a></dt>
+    <dd>May 15th, 2025</dd>
+  
+    <dt><a href="/journal/root-beer-an-ode-to-my-favorite-soda">Root Beer: An Ode to my Favorite Soda</a></dt>
+    <dd>May 1st, 2025</dd>
+              
+  </dl>
+</section>
+<section>
+  <h2>Categories</h2>
+  <menu>
+  
+    <li><a href="/category/programming">#programming</a></li>
+  
+    <li><a href="/category/art">#art</a></li>
+  
+    <li><a href="/category/root-beer">#root-beer</a></li>
+  
+    <li><a href="/category/railgun">#railgun</a></li>
+  
+    <li><a href="/category/meta">#meta</a></li>
+  
+  </menu>
+</section>
+<section>
+  <h2>Archives</h2>
+  <menu>
+  
+    <li><a href="/archive/2025">2025</a></li>
+  
+  </menu>
+</section>
+</aside>
+  </div>
+  <div class="container">
+    <div class="layout">
+      <main class="layout-content">
+<section class="journal-nav">
+  <div class="previous"><a href="/journal/drawing-my-five-month-progression"><span class="icon-previous"></span> <p>Drawing: My Five-Month Progression</p></a></div>
+  <div class="next"></div>
+</section>
+</main>
+      <aside class="layout-sidebar"></aside>
+    </div>
+    <footer class="footer">
+      <p>Copyright &copy; 2025 Henry’s Hangout. All rights reserved. </p>
+    </footer>
+  </div>
+</body>
+</html>
