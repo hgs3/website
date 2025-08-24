@@ -4,8 +4,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://hgs3.me/</loc>
-        <lastmod>2025-07-20</lastmod>
+        <lastmod>2025-08-23</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/black-thunder-chocolate-bar-copycat-recipe</loc>
+        <lastmod>2025-08-23</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://hgs3.me/journal/unmasking-the-ecs-design-pattern</loc>
@@ -43,6 +48,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://hgs3.me/category/recipe</loc>
+        <lastmod>2025-08-23</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://hgs3.me/category/programming</loc>
         <lastmod>2025-07-20</lastmod>
         <priority>0.3</priority>
@@ -69,7 +79,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/archive/2025</loc>
-        <lastmod>2025-07-20</lastmod>
+        <lastmod>2025-08-23</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
