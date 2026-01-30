@@ -4,8 +4,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://hgs3.me/</loc>
-        <lastmod>2025-12-29</lastmod>
+        <lastmod>2026-01-30</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/the-dark-side-of-preparation-meets-opportunity</loc>
+        <lastmod>2026-01-30</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://hgs3.me/journal/digital-graphics-my-five-month-progression</loc>
@@ -58,6 +63,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://hgs3.me/category/philosophy</loc>
+        <lastmod>2026-01-30</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://hgs3.me/category/art</loc>
         <lastmod>2025-12-29</lastmod>
         <priority>0.3</priority>
@@ -86,6 +96,11 @@
         <loc>https://hgs3.me/category/meta</loc>
         <lastmod>2025-03-01</lastmod>
         <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/archive/2026</loc>
+        <lastmod>2026-01-30</lastmod>
+        <priority>0.2</priority>
     </url>
     <url>
         <loc>https://hgs3.me/archive/2025</loc>
