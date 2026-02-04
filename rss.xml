@@ -6,6 +6,35 @@
         <description>Latest posts from My Blog</description>
         
         <item>
+            <title>Semy: The Semantic Version Parser for C11</title>
+            <link>https://hgs3.me//journal/semy-the-semantic-version-parser-for-c11</link>
+            <description><![CDATA[<p>Semy (rhymes with <em>Remy</em>) is a Semantic Version 2.0.0 (SemVer) parser and processor.
+It is both a C library and a command-line interface.</p>
+<p>You can use Semy to validate semantic versions, extract version identifiers, check if two versions are equal, and check if a version is newer or older than another.</p>
+<h2 id="why?">Why?<a href="#why?">#</a></h2>
+<p>I wrote Semy because I have multiple projects that require a semantic version parser.
+Semy was purpose built for those needs.</p>
+<h2 id="technical-tidbits">Technical Tidbits<a href="#technical-tidbits">#</a></h2>
+<p>I developed Semy as a single header/source implementation so it’s easily vendored into my own (and your own) projects.
+It also includes CMake and Autotools build scripts for traditional compilation and installation.</p>
+<p>According to the SemVer specification, there is no length limit on the number of pre-release and build identifiers a semantic version can have.
+I wrote Semy without dynamic memory allocation, so the implementation <em>does</em> assume a maximum size, however, that limit will <em>never</em> be realistically hit in practice.</p>
+<p>Semy is extensively tested:</p>
+<ul>
+<li>Unit tests with 100% code coverage</li>
+<li>Fuzz tests (libFuzzer and AFL++)</li>
+<li>Code sanitizers (UBSAN, ASAN, and MSAN)</li>
+<li>Extensive run-time checks</li>
+</ul>
+<p>The SemVer specification is published at <a href="https://semver.org/">https://semver.org/</a>.</p>
+<h2 id="the-initial-release">The Initial Release<a href="#the-initial-release">#</a></h2>
+<p>I released Semy at version 0.9.0 because it’s well tested and “stable,” but I’d like its API to bake in the wild before I commit (pun intended) to a 1.0.0 release.</p>
+<p>Semy is available under the MIT License.
+Its code is published at <a href="https://github.com/hgs3/semy">https://github.com/hgs3/semy</a>.</p>]]></description>
+            <pubDate>Wed, 04 Feb 2026 00:00:00 </pubDate>
+        </item>
+        
+        <item>
             <title>The Dark Side of ‘Preparation Meets Opportunity’</title>
             <link>https://hgs3.me//journal/the-dark-side-of-preparation-meets-opportunity</link>
             <description><![CDATA[<p>The adage “Luck is what happens when preparation meets opportunity” is everywhere.

@@ -4,8 +4,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://hgs3.me/</loc>
-        <lastmod>2026-01-30</lastmod>
+        <lastmod>2026-02-04</lastmod>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://hgs3.me/journal/semy-the-semantic-version-parser-for-c11</loc>
+        <lastmod>2026-02-04</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://hgs3.me/journal/the-dark-side-of-preparation-meets-opportunity</loc>
@@ -63,6 +68,11 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://hgs3.me/category/programming</loc>
+        <lastmod>2026-02-04</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://hgs3.me/category/philosophy</loc>
         <lastmod>2026-01-30</lastmod>
         <priority>0.3</priority>
@@ -83,11 +93,6 @@
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://hgs3.me/category/programming</loc>
-        <lastmod>2025-07-20</lastmod>
-        <priority>0.3</priority>
-    </url>
-    <url>
         <loc>https://hgs3.me/category/railgun</loc>
         <lastmod>2025-03-07</lastmod>
         <priority>0.3</priority>
@@ -99,7 +104,7 @@
     </url>
     <url>
         <loc>https://hgs3.me/archive/2026</loc>
-        <lastmod>2026-01-30</lastmod>
+        <lastmod>2026-02-04</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
