@@ -4,6 +4,92 @@
     <link>https://hgs3.me/</link>
     
         <entry>
+            <title>Confetti Comes To Java, Go, Rust, and Python</title>
+            <link>https://hgs3.me//journal/confetti-comes-to-java-go-rust-and-python</link>
+            <updated>Mon, 24 Aug 2026 00:00:00 </updated>
+            <content type="html"><![CDATA[<p>I announced Confetti <a href="/journal/confetti-the-configuration-language-for-humans/">over one year ago</a> and a lot has happened since then.</p>
+<h2 id="more-implementations">More Implementations<a href="#more-implementations">#</a></h2>
+<p>I wrote the reference implementation of Confetti in the C programming language.
+I chose C mainly because it’s the <em>lingua franca</em> of programming languages, and most languages provide a C FFI or a dedicated API for wrapping C libraries.</p>
+<p>While it <em>is</em> possible to use the C implementation of Confetti from other programming languages, various members of the open source community have written their own native implementations in other languages.
+I want to give a shout-out to these authors now.</p>
+<ul>
+<li><a href="https://github.com/bobuk/pyconfetti">pyconfetti</a> (for Python) by <a href="https://github.com/bobuk">bobuk</a></li>
+<li><a href="https://github.com/welandaz/jconfetti">jconfetti</a> (for Java) by <a href="https://github.com/welandaz">welandaz</a></li>
+<li><a href="https://github.com/shkmv/confetti-rs">confetti-rs</a> (for Rust) by <a href="https://github.com/shkmv">shkmv</a></li>
+<li><a href="https://github.com/demen1n/confetti">confetti</a> (for Go) by <a href="https://github.com/demen1n">demen1n</a></li>
+</ul>
+<p>Thank you so much for your interest in Confetti and taking the time to author these implementations.
+I’ve linked them from the homepage of the <a href="https://confetti.hgs3.me/">Confetti website</a>.</p>
+<h2 id="shoutout-on-radio-t">Shoutout on Radio-T<a href="#shoutout-on-radio-t">#</a></h2>
+<p>I was informed by <a href="https://github.com/demen1n">demen1n</a>, the author of the <a href="https://github.com/demen1n/confetti">Go implementation of Confetti</a>, that Confetti was mentioned on Radio-T.
+Radio-T is a popular, long-running Russian-language tech podcast covering gadgets and software development.
+One of the hosts, Bobuk (author of <a href="https://github.com/bobuk/pyconfetti">pyconfetti</a>), mentioned Confetti.</p>
+<h2 id="future-plans">Future Plans<a href="#future-plans">#</a></h2>
+<p>I released Confetti with zero expectations.
+The attention it’s received is humbling.</p>
+<p>I’ve been hosting the Confetti website as a subdomain of my personal website, but given the continued attention, it might be time to graduate Confetti to its own dedicated domain.</p>]]></content>
+        </entry>
+    
+        <entry>
+            <title>Drawing: My Five-Month Progression (Part 2)</title>
+            <link>https://hgs3.me//journal/drawing-my-five-month-progression-part-ii</link>
+            <updated>Wed, 20 May 2026 00:00:00 </updated>
+            <content type="html"><![CDATA[<p>Last year, I signed up for a drawing course and <a href="/journal/drawing-my-five-month-progression/">shared my progress</a>.
+This year, I signed up for the follow-up course and I wanted to share the end results.</p>
+<p>The course was structured the same as the previous one, but with more emphasis on shading.
+It challenged me in ways I wasn’t expecting, notably around portrait drawing which I’ll share in a moment.</p>
+<h2 id="still-life">Still Life<a href="#still-life">#</a></h2>
+<p>The first drawing I completed was a still life of a bottle and apple sitting on a box.
+There’s also some golf balls on a shelf and a chair leg in the background.</p>
+<p>The most challenging part of this drawing was the reflections in the bottle.
+I’d never drawn anything reflective before so capturing that in charcoal proved challenging.
+I found that a strong contrast between the reflective bits and the bottle itself yielded the most striking results.</p>
+<figure>
+<img alt="Final Sketch." height="2016" loading="lazy" src="/assets/still-life-1.jpg" width="1512"/>
+<figcaption>Bottle and apple on a box.</figcaption>
+</figure>
+<h2 id="portrait">Portrait<a href="#portrait">#</a></h2>
+<p>The second drawing we did was a portrait.
+I had to draw a fellow classmate and they me.
+I will <strong>not</strong> share the full portrait out of respect for their privacy, but I <em>will</em> share their eyes as I think they’re the most striking aspect of the drawing.</p>
+<p>This assignment nearly broke me.
+I’d never drawn a portrait before, so there was stress from that.
+Plus trying not to butcher my fellow classmates’ face added to the pressure.
+It’s one thing to draw a bottle and apple, but it’s entirely different to capture the human face.
+There’s a phrase for images that capture the human visage without looking quite right, it’s called <a href="https://en.wikipedia.org/wiki/Uncanny_valley">the uncanny valley</a>.
+Despite my misgivings, the results were better than I expected.</p>
+<figure>
+<img alt="Final Sketch." height="2016" loading="lazy" src="/assets/student-portrait.jpg" width="1512"/>
+<figcaption>Those eyes, whose are they?</figcaption>
+</figure>
+<h2 id="still-life-#2">Still Life #2<a href="#still-life-#2">#</a></h2>
+<p>The third drawing was another still life.
+This time, there was <em>a lot</em> more going on than a simple bottle and apple.
+I wasn’t exactly thrilled with how it turned out (it was my least favorite), but like anything else I did the best I could.</p>
+<figure>
+<img alt="Final Sketch." height="2016" loading="lazy" src="/assets/still-life-2.jpg" width="1512"/>
+<figcaption>A very busy still life.</figcaption>
+</figure>
+<h2 id="memento-mori">Memento Mori<a href="#memento-mori">#</a></h2>
+<p>The final drawing we did was a <a href="https://en.wikipedia.org/wiki/Vanitas">vanitas still life</a> which is a still life of items that hold significance to the artists.
+In my case, I drew stuffed animals from my childhood.
+From left-to-right, top-to-bottom the drawing has a stuffed dog, a stuffed grape, a watermelon, and a panda bear.
+I’ve had my doggy and panda since I was in dippers while the grape and watermelon I became friends with at age five.</p>
+<p>I was pleased with how this drawing turned out.
+I did my best to capture their individual fuzziness (extremely tricky).
+I had to experiment quite a bit, but overall, I’m pleased with the results.</p>
+<figure>
+<img alt="Final Sketch." height="2016" loading="lazy" src="/assets/stuffed-animals.jpg" width="1512"/>
+<figcaption>Fuzzy friends from childhood.</figcaption>
+</figure>
+<h2 id="closing-thoughts">Closing Thoughts<a href="#closing-thoughts">#</a></h2>
+<p>This course challenged me in ways I wasn’t expecting.
+Every drawing pushed me to try something new.
+Overall, given the end results, I’d say it was a very fruitful course.</p>]]></content>
+        </entry>
+    
+        <entry>
             <title>Semy: The Semantic Version Parser for C11</title>
             <link>https://hgs3.me//journal/semy-the-semantic-version-parser-for-c11</link>
             <updated>Wed, 04 Feb 2026 00:00:00 </updated>
